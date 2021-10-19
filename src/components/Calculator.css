@@ -31,8 +31,8 @@
   grid-column: span 2;
 }
 
-@media screen and (max-width: 576px){
-  .calculator-btns, 
+@media screen and (max-width: 576px) {
+  .calculator-btns,
   .result {
     width: 14rem;
   }

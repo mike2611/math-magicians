@@ -12,7 +12,7 @@ export default class Calculator extends React.PureComponent {
   }
 }
 
-const Result = () => <p className="result">0</p>;
+const Result = () => <div className="result"><p>0</p></div>;
 
 const Buttons = () => (
   <div className="calculator-btns">

@@ -1,3 +1,16 @@
+.result {
+  display: flex;
+  align-items: center;
+  width: 25rem;
+  height: 2rem;
+  background-color: #858693;
+  color: white;
+}
+
+.result p {
+  text-align: end;
+  width: 95%;
+}
 
 .calculator-btns {
   width: 25rem;
@@ -19,7 +32,8 @@
 }
 
 @media screen and (max-width: 576px){
-  .calculator-btns {
+  .calculator-btns, 
+  .result {
     width: 14rem;
   }
 }

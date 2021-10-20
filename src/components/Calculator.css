@@ -1,0 +1,39 @@
+.result {
+  display: flex;
+  align-items: center;
+  width: 25rem;
+  height: 2rem;
+  background-color: #858693;
+  color: white;
+}
+
+.result p {
+  text-align: end;
+  width: 95%;
+}
+
+.calculator-btns {
+  width: 25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+  padding: 1rem;
+  border: 1px solid #c5c5c5;
+}
+
+.btn-orange {
+  background-color: #f5913e;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 576px) {
+  .calculator-btns,
+  .result {
+    width: 14rem;
+  }
+}

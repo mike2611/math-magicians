@@ -1,4 +1,5 @@
-import React,{ Component } from 'react';
+/* eslint-disable react/no-unused-state */
+import React, { Component } from 'react';
 import Buttons from './Buttons';
 import Result from './Result';
 import calculate from '../logic/calculate';
@@ -10,23 +11,23 @@ export default class Calculator extends Component {
     this.state = {
       total: 0,
       next: null,
-      operation: null
-    }
+      operation: null,
+    };
     this.str = '';
     this.calculateHandler = this.calculateHandler.bind(this);
   }
 
  calculateHandler = (str) => {
-    this.setState(calculate(this.state, str));
-    this.str = str;
-  }
+   this.setState((state) => calculate(state, str));
+   this.str = str;
+ }
 
-  render() {
-    return (
-      <div>
-        <Result result={this.state} str={this.str}/>
-        <Buttons calculateHandler={this.calculateHandler}/>
-      </div>
-    );
+ render() {
+   return (
+     <div>
+       <Result result={this.state} str={this.str} />
+       <Buttons calculateHandler={this.calculateHandler} />
+     </div>
+   );
  }
 }

@@ -1,7 +1,15 @@
-import React,{ PureComponent } from 'react';
+/* eslint-disable react/prop-types */
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Result extends PureComponent {
   render() {
-  return (<div className="result"><p>{this.props.str === '=' ? this.props.result.total : this.props.result.next}</p></div>);
+    const { str, state } = this.props;
+    const { total, next } = state;
+    return (<div className="result"><p>{str === '=' ? total : next}</p></div>);
   }
 }
+
+Result.propTypes = {
+  str: PropTypes.string.isRequired,
+};

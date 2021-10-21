@@ -1,4 +1,5 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Buttons extends Component {
   constructor() {
@@ -7,7 +8,8 @@ export default class Buttons extends Component {
   }
 
   calculateHandler = (e) => {
-    this.props.calculateHandler(e.target.innerText);
+    const { calculateHandler } = this.props;
+    calculateHandler(e.target.innerText);
   }
 
   render() {
@@ -36,3 +38,7 @@ export default class Buttons extends Component {
     );
   }
 }
+
+Buttons.propTypes = {
+  calculateHandler: PropTypes.string.isRequired,
+};

@@ -17,9 +17,9 @@ export default class Calculator extends Component {
     this.calculateHandler = this.calculateHandler.bind(this);
   }
 
- calculateHandler = (str) => {
-   this.setState((state) => calculate(state, str));
-   this.str = str;
+ calculateHandler = (e) => {
+   this.setState((state) => calculate(state, e.target.innerText));
+   this.str = e.target.innerText;
  }
 
  render() {

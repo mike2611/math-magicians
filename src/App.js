@@ -1,9 +1,9 @@
 import Calculator from './components/Calculator';
 
-export default function App() {
-  return (
-    <div className="App">
-      <Calculator />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Calculator />
+  </div>
+);
+
+export default App;

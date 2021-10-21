@@ -1,8 +1,7 @@
+import React,{ PureComponent } from 'react';
 
-import * as React from 'react';
-
-export default class Result extends React.PureComponent {
-    render() {
-    return (<div className="result"><p>0</p></div>);
-    }
+export default class Result extends PureComponent {
+  render() {
+  return (<div className="result"><p>{this.props.str === '=' ? this.props.result.total : this.props.result.next}</p></div>);
+  }
 }

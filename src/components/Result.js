@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 export default class Result extends PureComponent {
   render() {
-    const { str, state } = this.props;
-    const { total, next } = state;
+    const { str, result } = this.props;
+    const { total, next } = result;
     return (<div className="result"><p>{str === '=' ? total : next}</p></div>);
   }
 }

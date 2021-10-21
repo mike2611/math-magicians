@@ -4,7 +4,7 @@ import Result from './Result';
 import calculate from '../logic/calculate';
 import './Calculator.css';
 
-export default function Calculator() {
+const Calculator = () => {
   const [data, setData] = useState(
     {
       total: 0,
@@ -26,4 +26,6 @@ export default function Calculator() {
       <Buttons calculateHandler={setStr} />
     </div>
   );
-}
+};
+
+export default (Calculator);

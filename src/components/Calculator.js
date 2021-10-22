@@ -1,33 +1,31 @@
-/* eslint-disable react/no-unused-state */
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Buttons from './Buttons';
 import Result from './Result';
 import calculate from '../logic/calculate';
 import './Calculator.css';
 
-export default class Calculator extends Component {
-  constructor() {
-    super();
-    this.state = {
+const Calculator = () => {
+  const [data, setData] = useState(
+    {
       total: 0,
       next: null,
       operation: null,
-    };
-    this.str = '';
-    this.calculateHandler = this.calculateHandler.bind(this);
-  }
+    },
+  );
+  const [str, setStr] = useState('');
 
- calculateHandler = (str) => {
-   this.setState((state) => calculate(state, str));
-   this.str = str;
- }
+  useEffect(() => {
+    if (str !== '') {
+      setData(calculate(data, str.target.innerText));
+    }
+  }, [str]);
 
- render() {
-   return (
-     <div>
-       <Result result={this.state} str={this.str} />
-       <Buttons calculateHandler={this.calculateHandler} />
-     </div>
-   );
- }
-}
+  return (
+    <div>
+      <Result result={data} str={str !== '' ? str.target.innerText : str} />
+      <Buttons calculateHandler={setStr} />
+    </div>
+  );
+};
+
+export default (Calculator);

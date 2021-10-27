@@ -5,24 +5,30 @@ import {
 import Home from './components/Home';
 import Quote from './components/Quote';
 import Math from './components/Math';
+import './App.css';
 
 const App = () => (
   <Router>
     <div className="App">
-      <h1>Math Magicians</h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>|</li>
-        <li>
-          <Link to="/calculator">Calculator</Link>
-        </li>
-        <li>|</li>
-        <li>
-          <Link to="/quote">Quote</Link>
-        </li>
-      </ul>
+      <div className="nav-bar d-flex">
+        <h1>
+          <span className="big-m">M</span>
+          ath Magicians
+        </h1>
+        <ul className="nav-menu d-flex">
+          <li>
+            <Link to="/" className="nav-elements">Home</Link>
+          </li>
+          <li className="separations">|</li>
+          <li>
+            <Link to="/calculator" className="nav-elements">Calculator</Link>
+          </li>
+          <li className="separations">|</li>
+          <li>
+            <Link to="/quote" className="nav-elements">Quote</Link>
+          </li>
+        </ul>
+      </div>
       <Switch>
         <Route exact path="/">
           <Home />

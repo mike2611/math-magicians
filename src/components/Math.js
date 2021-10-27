@@ -1,7 +1,8 @@
 import Calculator from './Calculator';
+import './Math.css';
 
 const Math = () => (
-  <div>
+  <div className="math d-flex">
     <h1>Let&apos;s do some math!</h1>
     <Calculator />
   </div>

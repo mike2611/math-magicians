@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import React, { memo } from 'react';
-import PropTypes from 'prop-types';
 
 const Buttons = ({ calculateHandler }) => (
   <div className="calculator-btns">
@@ -24,9 +24,5 @@ const Buttons = ({ calculateHandler }) => (
     <button type="button" className="btn btn-orange" onClick={calculateHandler}>=</button>
   </div>
 );
-
-Buttons.propTypes = {
-  calculateHandler: PropTypes.string.isRequired,
-};
 
 export default memo(Buttons);

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home component should render Home compoennt correctly 1`] = `
+exports[`Home component should render Home component correctly 1`] = `
 <div
   className="home"
 >

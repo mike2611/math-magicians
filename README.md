@@ -32,9 +32,10 @@ To get a local copy up and running follow these simple example steps.
 Open terminal
 Clone this project by command git clone https://github.com/mike2611/math-magicians.git
 
-- Download/Clone the repository files and navigate to root folder 
+- Download/Clone the repository files 
 - Open terminal and move to the root folder
-- Run npm start if you have npm installed or Open dist/index.html in the browser (you can use Live Server extension in Visual Studio Code)
+- Run `npm install` to get ahold of all dependencies
+- Run `npm start`
 
 
 ## Authors

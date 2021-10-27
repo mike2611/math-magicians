@@ -34,7 +34,8 @@ Clone this project by command git clone https://github.com/mike2611/math-magicia
 
 - Download/Clone the repository files and navigate to root folder 
 - Open terminal and move to the root folder
-- Run npm start if you have npm installed or Open dist/index.html in the browser (you can use Live Server extension in Visual Studio Code)
+- Run `npm install` to get ahold of all dependencies
+- Run `npm start`
 
 
 ## Authors

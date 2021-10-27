@@ -2,17 +2,17 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import ReactShallowRenderer from 'react-test-renderer/shallow';
-import Math from './Math';
+import Quote from './Quote';
 
-describe('Math component tests', () => {
-  test('Should render Home component correctly', () => {
+describe('Quote component tests', () => {
+  test('Should render Quote component correctly', () => {
     const renderer = new ReactShallowRenderer();
-    renderer.render(<Math />);
+    renderer.render(<Quote />);
     expect(renderer.getRenderOutput()).toMatchSnapshot();
   });
 
-  test("Renders Let's do some math! as an h1", () => {
-    const component = render(<Math />);
-    component.getByText("Let's do some math!");
+  test('Renders William Pault Thurston', () => {
+    const component = render(<Quote />);
+    component.getByText('-William Pault Thurston');
   });
 });

@@ -1,11 +1,11 @@
 .math {
   display: flex;
   justify-content: space-around;
-} 
+}
 
 @media screen and (max-width: 770px) {
   .math {
     flex-direction: column;
     align-items: center;
-  } 
+  }
 }

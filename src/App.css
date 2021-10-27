@@ -1,5 +1,5 @@
 .d-flex {
- display: flex;
+  display: flex;
 }
 
 .nav-bar {
@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding: 2rem;
   margin: 1rem;
-  background-color: #005F73;
+  background-color: #005f73;
 }
 
 .nav-bar h1 {
@@ -47,22 +47,24 @@
   .nav-bar {
     flex-direction: column;
   }
+
   .nav-bar h1 {
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
   }
+
   .nav-menu {
     flex-direction: column;
   }
+
   .nav-menu li {
     margin: 1rem;
     font-size: 2rem;
     color: #f5913e;
   }
-  
+
   .separations {
     display: none;
   }
-  
 }

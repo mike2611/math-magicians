@@ -20,7 +20,7 @@ describe('App.js component', () => {
   test('testing navigation to home page', () => {
     const leftClick = {button: 0}
     userEvent.click(screen.getByText(/Home/i), leftClick);
-    expect(screen.getByText(/Wecome to our Page!/i)).toBeInTheDocument();
+    expect(screen.getByText(/Welcome to our Page!/i)).toBeInTheDocument();
   
   });
 

@@ -12,10 +12,10 @@ describe('Home component', () => {
     expect(renderer.getRenderOutput()).toMatchSnapshot();
   });
 
-  test('renders Wecome to our Page! in the DOM', () => {
+  test('renders Welcome to our Page! in the DOM', () => {
     render(<Home/>);
 
-    const welcomeText = screen.queryByText('Wecome to our Page!');
+    const welcomeText = screen.queryByText('Welcome to our Page!');
 
     expect(welcomeText).toBeInTheDocument();
   });

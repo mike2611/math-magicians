@@ -24,7 +24,6 @@ This application is built using React.
 - Web browser
 - Visual Studio Code
 
-
 ## Setup
 
 To get a local copy up and running follow these simple example steps.
@@ -32,11 +31,10 @@ To get a local copy up and running follow these simple example steps.
 Open terminal
 Clone this project by command git clone https://github.com/mike2611/math-magicians.git
 
-- Download/Clone the repository files 
+- Download/Clone the repository files
 - Open terminal and move to the root folder
 - Run `npm install` to get ahold of all dependencies
 - Run `npm start`
-
 
 ## Authors
 
@@ -46,6 +44,10 @@ Clone this project by command git clone https://github.com/mike2611/math-magicia
 - Twitter: [@MiguelP2611](https://twitter.com/MiguelP2611)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/miguel-puentes-mata-90a562139/)
 
+## Testing Co-Author: Jose Abel Ramirez Frontany\*\*
+
+- GitHub: [Jose Abel Ramirez Frontany](https://github.com/jose-Abel)
+- Linkedin: [Jose Abel Ramirez Frontany](https://www.linkedin.com/in/jose-abel-ramirez-frontany-7674a842/)
 
 ## 🤝 Contributing
 

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Math component tests Should render Home component correctly 1`] = `
+<div
+  className="math"
+>
+  <h1>
+    Let's do some math!
+  </h1>
+  <Calculator />
+</div>
+`;

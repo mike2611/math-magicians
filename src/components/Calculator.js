@@ -16,7 +16,7 @@ const Calculator = () => {
 
   useEffect(() => {
     if (str !== '') {
-      setData(() => calculate(data, str.target.innerText));
+      setData(calculate(data, str.target.innerText));
     }
   }, [str]);
 

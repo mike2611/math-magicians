@@ -14,6 +14,10 @@ This application is built using React.
 
 ![screenshot](./images/desktopImage.png)
 
+## Live Demo 
+- https://mike-math-magicians.herokuapp.com/
+- https://mike-mathc-magicians.netlify.app/
+
 ## Built With
 
 - React

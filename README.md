@@ -16,6 +16,7 @@ This application is built using React.
 
 ## Live Demo 
 https://mike-math-magicians.herokuapp.com/
+https://mike-mathc-magicians.netlify.app/
 
 ## Built With
 
